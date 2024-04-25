@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    background: rgb(2,0,36);
+    background: linear-gradient(159deg, rgba(2,0,36,1) 0%, rgba(9,103,121,1) 100%, rgba(0,212,255,1) 100%);
+}
+input {
+    width: 80%;
+    margin: 2% 10%;
+}
+h1, h2, h3 {
+    margin: 1rem 0 0 0;
+    text-align: center;
+}
+button {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 300;
+    color: #f2f2f2;
+    background-color: transparent;
+    border: 1px solid red;
+    padding: 5px;
+}
+button:hover {
+    background-color: red;
+    color: slategray;
+
+}
+
+/* Class formatting */
+
+.grid-container {
+    z-index: 10;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 80%;
+    border: solid black 1px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.button-container {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    width: 50%;
+    margin: 0 25%;
+    justify-content: space-around;
+}
+.outer-grid {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: solid 2px rgb(250, 4, 4);
+    border-radius: 15px;
+    margin: 5% 5%;
+    width: 90%;
+    height: 60%;
+    box-shadow: rgba(120, 242, 255, 0.2) 0px 7px 29px 0px;
+}
+.input-card {
+    width: 90%;
+    height: 90%;
+    margin: 0 5%;
+    border: red dashed 2px;
+    padding: 1rem;
+}
+
+
+/* ID formatting */
+
+#input-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 1rem 10%;
+    padding: 2rem;
+}
+#submit {
+    width: 20%;
+    margin : 1% 40%;
+}
+
+@media screen and (min-width: 700px) {
+    .outer-grid {
+        width: 70%;
+        margin: 2% 15%;
+    }
+    #input-area {
+        width: 50%;
+        margin: 0 25% 0 25%;
+    }
+}
+
+@media screen and (min-height: 700px) {
+    .outer-grid {
+        width: 70%;
+        margin: 2% 15%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .outer-grid {
+        width: 50%;
+        margin: 2% 25%;
+    }
+    #input-area {
+        width: 40%;
+        margin: 0 30%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .outer-grid {
+        width: 40%;
+        margin: 2% 30%;
+    }
+    #input-area {
+        width: 25%;
+        margin: 0 37.5%;
+    }
+}
